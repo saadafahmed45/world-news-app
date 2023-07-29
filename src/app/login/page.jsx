@@ -1,5 +1,12 @@
 import React from 'react';
 
+export const metadata = {
+   title: 'login  ',
+   openGraph: {
+      title: 'login',
+   },
+}
+
 const page = () => {
    return (
       <div className=" bg-base-200">

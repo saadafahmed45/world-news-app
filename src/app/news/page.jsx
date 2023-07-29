@@ -3,6 +3,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+
+export const metadata = {
+   title: 'Recent News ',
+   openGraph: {
+      title: 'world news',
+   },
+}
+
+
 const News = async () => {
    const data = await newsLoad();
    const news = data.news;
@@ -17,7 +26,7 @@ const News = async () => {
             {/* card */}
 
             {
-               news.splice(0, 2).map(news => (
+               news.splice(0, 4).map(news => (
                   <div key={news.id} className="card w-96 bg-base-100 shadow-xl mt-5">
                      <figure>
                         <Image priority={false} src={news.image}

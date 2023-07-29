@@ -3,6 +3,6 @@ const nextConfig = {}
 
 module.exports = {
    images: {
-      domains: ["imageio.forbes.com", "crowdwisdom.live"]
+      domains: ["imageio.forbes.com", "crowdwisdom.live", "www.investors.com"]
    }
 }

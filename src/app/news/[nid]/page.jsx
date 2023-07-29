@@ -8,7 +8,7 @@ const SingleNews = async ({ params }) => {
    const news = data.news;
    const { id } = news
    return (
-      <div className="h-screen">
+      <div className="h-screen   ">
          <div className="container mx-auto m-5">
             <div className="text-sm breadcrumbs">
                <ul>
