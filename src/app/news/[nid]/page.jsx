@@ -5,8 +5,8 @@ const SingleNews = async ({ params }) => {
 
    const data = await newsSingle(params.nid);
 
-   const news = data.news[0];
-   const { id } = news
+   const news = data.news;
+   const { id } = news;
    return (
       <div className="h-screen   ">
          <div className="container mx-auto m-5">
