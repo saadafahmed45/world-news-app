@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 
 export const metadata = {
@@ -7,7 +8,14 @@ export const metadata = {
    },
 }
 
-const page = () => {
+const Login = () => {
+
+   const googleHandler = () => {
+      alert("click")
+
+   }
+
+
    return (
       <div className=" bg-base-200">
          <div className="hero min-h-screen container  mx-auto ">
@@ -15,6 +23,12 @@ const page = () => {
                <div className="text-center lg:text-left">
                   <h1 className="text-5xl font-bold">Login now!</h1>
                   <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+
+                  <div>
+                     <button
+                        onClick={() => googleHandler()}
+                        class="btn btn-warning"> google login</button>
+                  </div>
                </div>
                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                   <div className="card-body">
@@ -44,4 +58,4 @@ const page = () => {
    );
 };
 
-export default page;
+export default Login;

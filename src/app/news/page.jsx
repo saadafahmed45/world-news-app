@@ -22,12 +22,12 @@ const News = async () => {
          <div>
             <h2 className='text-4xl font-semibold text-center m-4'>Recent News</h2>
          </div>
-         <div className='flex flex-wrap justify-center gap-8 '>
+         <div className='flex flex-wrap justify-center  gap-8 '>
             {/* card */}
 
             {
                news.splice(0, 4).map(news => (
-                  <div key={news.id} className="card w-96 bg-base-100 shadow-xl mt-5">
+                  <div key={news.id} className="card w-80 bg-base-100 shadow-xl mt-5">
                      <figure>
                         <Image priority={false} src={news.image}
                            width={500}
